@@ -1,13 +1,9 @@
-## https://www.acmicpc.net/problem/18870
+## https://www.acmicpc.net/problem/1269
 import sys
 
-N = int(input())
-coords = list(sys.stdin.readline().rstrip().split())
+N, M = map(int, sys.stdin.readline().rstrip().split())
 
-sorted_coords = sorted(coords)
-compress = {}
-for item in sorted_coords:
-    compress.update({item : sorted_coords.index(item)})
+A = set(map(int, sys.stdin.readline().rstrip().split()))
+B = set(map(int, sys.stdin.readline().rstrip().split()))
 
-for item in coords:
-    print(compress[item], end=" ")
+print(len(A.difference(B)) + len(B.difference(A)))
