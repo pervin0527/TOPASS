@@ -1,21 +1,35 @@
-import sys
-import math
+## https://www.acmicpc.net/problem/4948
 
-n = int(sys.stdin.readline())
-a = int(sys.stdin.readline())
+def prime_checker(number):
+    for n in range(2, int(number ** 0.5) + 1):
+        if number % n == 0:
+            return False
+    return True
 
-A = []
-for i in range(n - 1):
-    num = int(input())
-    A.append(num - a)
-    a = num
 
-g = A[0]
-for j in range(1, len(A)):
-    g = math.gcd(g, A[j])
+while True:
+    cnt = 0
+    N = int(input())
+    if N == 0:
+        break
 
-result = 0
-for each in A:
-    result += each // g - 1
+    arr = [True] * (2 * N + 1)
+    arr[0], arr[1] = False, False
 
-print(result)
+    for i in range(2, int((2 * N) ** 0.5) + 1):
+        if arr[i]:
+            j = 2
+            while i * j <= 2 * N:
+                arr[i * j] = False
+                j += 1
+
+    print(arr[N+1:].count(True))
+
+    # count= 0
+    # for num in range(N+1, (2*N+1)):
+    #     if prime_checker(num):
+    #         count += 1
+    #     else:
+    #         continue
+    
+    # print(count)
