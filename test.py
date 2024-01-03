@@ -1,9 +1,21 @@
-## https://www.acmicpc.net/problem/1269
 import sys
+import math
 
-N, M = map(int, sys.stdin.readline().rstrip().split())
+n = int(sys.stdin.readline())
+a = int(sys.stdin.readline())
 
-A = set(map(int, sys.stdin.readline().rstrip().split()))
-B = set(map(int, sys.stdin.readline().rstrip().split()))
+A = []
+for i in range(n - 1):
+    num = int(input())
+    A.append(num - a)
+    a = num
 
-print(len(A.difference(B)) + len(B.difference(A)))
+g = A[0]
+for j in range(1, len(A)):
+    g = math.gcd(g, A[j])
+
+result = 0
+for each in A:
+    result += each // g - 1
+
+print(result)
