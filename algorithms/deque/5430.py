@@ -1,5 +1,10 @@
 """
 https://www.acmicpc.net/problem/5430
+
+핵심 처리
+R
+0
+[]
 """
 
 from collections import deque
