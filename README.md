@@ -19,3 +19,9 @@
    - [스택 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=71)
    - [큐 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=72)
    - [덱 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=73)
+
+## 코딩 테스트를 위한 알고리즘
+
+1. Recursive
+   - [개념 정리](https://pervin0527.notion.site/Recursive-047bf9dfbb0d4f219fd85ad18ec489c5?pvs=4)
+   - [문제집](./algorithms/recursive)
