@@ -9,17 +9,14 @@
 이러한 방식으로 문제를 해결하면, 모든 중간 결과는 C로 나눈 나머지를 취하므로, 계산 과정에서 수가 너무 커져서 발생할 수 있는 오버플로우를 방지할 수 있다는데 너무 어렵다....
 """
 
-def solution(a, b, c):
+def func(a, b, c):
     if b == 1:
         return a % c
     
-    temp = solution(a, b // 2, c)
-    
+    curr = func(a, b//2, c)
     if b % 2 == 0:
-        return (temp * temp) % c
+        return (curr * curr) % c
     else:
-        return (temp * temp * a) % c
-
-
-A, B, C = map(int, input().split())
-print(solution(A, B, C))
+        return (curr * curr * a) % c
+    
+a, b, c = map(int, input().split())
