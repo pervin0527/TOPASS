@@ -1,3 +1,7 @@
+"""
+https://www.acmicpc.net/problem/2447
+"""
+
 n = int(input())
 result = [[" " for _ in range(n)] for _ in range(n)]
 
