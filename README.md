@@ -30,5 +30,11 @@
    - [DFS문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=127)
 
 2. Recursive
+
    - [개념 정리](https://pervin0527.notion.site/Recursive-047bf9dfbb0d4f219fd85ad18ec489c5?pvs=4)
    - [문제집](./algorithms/recursive)
+
+3. Back-Tracking
+
+   - [개념 정리]()
+   - [문제집]()
