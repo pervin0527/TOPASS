@@ -1,14 +1,11 @@
-## 선택정렬(selection sort)
-arr = [9, 1, 6, 8, 4, 3, 2, 0]
+def recursion(s, l, r):
+    if l >= r: return 1
+    elif s[l] != s[r]: return 0
+    else: return recursion(s, l+1, r-1)
 
-for i in range(len(arr)):
-    min_idx = i
-    ## 최소값 탐색.
-    for j in range(i+1, len(arr)):
-        if arr[min_idx] > arr[j]:
-            min_idx = j
-    
-    ## 원소간 위치 전환.    
-    arr[i], arr[min_idx] = arr[min_idx], arr[i]
+def isPalindrome(s):
+    return recursion(s, 0, len(s)-1)
 
-print(arr)
+print('ABBA:', isPalindrome('ABBA'))
+print('ABC:', isPalindrome('ABC'))
+print('A:', isPalindrome('A'))
