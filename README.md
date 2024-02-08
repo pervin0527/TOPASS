@@ -1,40 +1,46 @@
-## 코딩 테스트를 위한 자료구조
+# 자료구조, 알고리즘 정복하기
 
-코딩 테스트를 준비하기 위해 알고리즘을 공부하기 위해서는 반드시 자료구조에 대한 이해와 구현 능력이 필요하다.  
-따라서 기본적인 개념과 기능들에 대해 정리하고, 구현 코드를 기록한다.
+**바킹(갓제너럴엠페러)독**님의 (실전 알고리즘 강의)[https://www.youtube.com/playlist?list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY]를 보고 파이썬으로 만든 저장소입니다.
 
-1. Array & Linked List
+- [바킹독님의 실전 알고리즘 Github](https://github.com/encrypted-def/basic-algo-lecture/tree/master)
+- [바킹독님의 실전 알고리즘 YouTube](https://www.youtube.com/playlist?list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY)
+- [바킹독님의 실전 알고리즘 Blog](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 
-   - [개념 정리](https://pervin0527.notion.site/Array-Linked-List-db6e4bdfc9ba42cca66b74753ecab41d?pvs=4)
-   - [연결 리스트 구현](./data_structure/linked_list.ipynb)
-   - [연결 리스트 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=154)
-   - [배열 문제집](https://www.acmicpc.net/step/6)
+원작의 퀄리티만큼은 아니지만, 자료구조와 알고리즘을 공부하시는 모든 파이썬 개발자 분들께 티끌만큼이라도 도움이 되셨으면 좋겠습니다.
 
-2. Stack & Queue & Deque
+## 문제집
 
-   - [개념 정리](https://pervin0527.notion.site/Stack-3443db26fa7241ddb9c7ac421b779b00?pvs=4)
-   - [스택 기본코드](./data_structure/stack.ipynb)
-   - [큐 기본코드](./data_structure/queue.ipynb)
-   - [덱 기본코드](./data_structure/deque.ipynb)
-   - [스택 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=71)
-   - [큐 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=72)
-   - [덱 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=73)
+아래 설명은 바킹독님의 실전 알고리즘에서 추천하는 공부법이니 이대로 잘 따라가는 것이 좋을 것 같습니다.
 
-## 코딩 테스트를 위한 알고리즘
+> 먼저 강의 내에 있는 제 코드를 참고하지 않고 **연습 문제**를 풀어봅니다.  
+> 그 후에 **기본 문제✔**까지는 풀어보시는걸 강력하게 권장합니다. **기본 문제✔**를 풀 때 아예 풀이를 모르겠다면 아직 학습이 부족한 상태이니 강의를 다시 확인하실 필요가 있습니다.
 
-1. BFS & DFS
+> **기본 문제✔**를 풀 때 풀이는 떠올릴 수 있지만 구현에서 문제가 생기는 경우라면 정답 코드를 참고해서 구현법을 익힌 후 다른 **기본 문제**를 풀이 참고 없이 풀면서 구현력을 기르시는걸 추천드립니다.
 
-   - [BFS 개념정리](https://www.notion.so/pervin0527/Breadth-First-Search-BFS-987bd40284b1421ca72f734fc57f2363?pvs=4)
-   - [DFS 개념정리](https://www.notion.so/pervin0527/Depth-First-Search-DFS-7e051dd35e284c898788f5fdbd76b176?pvs=4)
-   - [BFS 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=126)
-   - [DFS문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=127)
+> **기본 문제✔**를 풀 때 큰 어려움이 없다면 **응용 문제✔**도 확인해서 문제 해결 능력을 길러보시는걸 추천드립니다.  
+> **응용 문제✔** 분류의 문제들은 다소 발상이 어렵거나 새로운 테크닉을 필요로 할 수 있기 때문에 30분-1시간 정도 고민한 후에도 풀이를 모르겠다면 정답 코드나 풀이를 확인해도 괜찮습니다.  
+> 그러나 풀이만 확인하고 끝내는 것이 아니고 반드시 풀이를 바탕으로 혼자 힘으로 구현해보는 것을 추천드립니다.
 
-2. Recursive
+> **응용 문제✔**를 모두 해결했다면 우선 다음 단원으로 넘어가고, 나중에 완강을 한 후 남은 **응용 문제**를 풀이 참고 없이 도전해보는걸 추천드립니다.
 
-   - [개념 정리](https://pervin0527.notion.site/Recursive-047bf9dfbb0d4f219fd85ad18ec489c5?pvs=4)
-   - [문제집](./algorithms/recursive)
+> 정리하자면 문제집에서 **연습 문제**, **기본 문제✔**, **응용 문제✔** 까지 풀고 다음 단원으로 넘어가는걸 추천드립니다.  
+> **응용 문제✔**는 풀이를 참고해도 괜찮지만 **연습 문제**, **기본 문제✔**는 강의의 내용을 잘 이해했다면 풀이를 참고하지 않고 구현할 수 있기 때문에 혼자 힘으로 풀어보길 권장합니다.
 
-3. Back-Tracking
+> 만약 **응용 문제✔**를 푸는데에 어려움이 있다면 **응용 문제✔** 대신 **기본 문제**를 더 풀고 다음 단원으로 넘어가도 괜찮습니다.
 
-   - [개념 정리]()
-   - [문제집]()
+### 0x03 배열(Array)
+
+- [개념 정리](https://www.notion.so/pervin0527/Array-Linked-List-db6e4bdfc9ba42cca66b74753ecab41d?pvs=4)
+
+- [문제집 링크](https://www.acmicpc.net/workbook/view/7307)
+
+| 문제 분류  | 문제  |                        문제 제목                        |                정답 코드                 |
+| :--------: | :---: | :-----------------------------------------------------: | :--------------------------------------: |
+| 연습 문제  | 10808 |  [알파벳 개수](https://www.acmicpc.net/problem/10808)   |    [정답 코드](./0x03_Array/10808.py)    |
+| 기본 문제✔ | 2577  |   [숫자의 개수](https://www.acmicpc.net/problem/2577)   |    [정답 코드](./0x03_Array/2577.py)     |
+| 기본 문제✔ | 1475  |     [방 번호](https://www.acmicpc.net/problem/1475)     |    [정답 코드](./0x03_Array/1475.pyp)    |
+| 기본 문제✔ | 3273  |   [두 수의 합](https://www.acmicpc.net/problem/3273)    |    [정답 코드](./0x03_Array/3273.py)     |
+| 기본 문제  | 10807 |   [개수 세기](https://www.acmicpc.net/problem/10807)    | [정답 코드](../0x03/solutions/10807.cpp) |
+| 기본 문제  | 13300 |    [방 배정](https://www.acmicpc.net/problem/13300)     | [정답 코드](../0x03/solutions/13300.cpp) |
+| 기본 문제  | 11328 |     [Strfry](https://www.acmicpc.net/problem/11328)     | [정답 코드](../0x03/solutions/11328.cpp) |
+| 기본 문제  | 1919  | [애너그램 만들기](https://www.acmicpc.net/problem/1919) | [정답 코드](../0x03/solutions/1919.cpp)  |
