@@ -19,15 +19,18 @@ class LinkedList:
 
     def insert(self, char):
         node = Node(char)
-        node.prev = self.cursor.prev
-        node.next = self.cursor
-        self.cursor.prev.next = node
-        self.cursor.prev = node
+        
+        ## 커서의 왼쪽에 문자를 추가.
+        node.prev = self.cursor.prev ## 새 노드의 prev 포인터를 커서의 현재 위치 바로 앞에 있는 노드(cursor.prev)로 설정.
+        node.next = self.cursor ## 새 노드의 next 포인터를 현재 커서가 가리키는 노드로 설정.
+
+        self.cursor.prev.next = node ## 커서 앞의 노드의 next 포인터를 새 노드로 설정.
+        self.cursor.prev = node ## 커서의 prev 포인터를 새 노드로 설정.
 
     def delete(self):
-        if self.cursor.prev != self.head:  # 삭제할 노드가 있으면
-            self.cursor.prev.prev.next = self.cursor
-            self.cursor.prev = self.cursor.prev.prev
+        if self.cursor.prev != self.head:  # 삭제할 노드가 있으면, 커서 왼쪽에 있는 문자를 삭제.
+            self.cursor.prev.prev.next = self.cursor ## 삭제할 노드(cursor.prev)의 이전 노드의 next 포인터를 커서가 가리키는 노드로 설정하여, 삭제할 노드를 연결 리스트에서 분리.
+            self.cursor.prev = self.cursor.prev.prev ## 커서의 prev 포인터를 삭제할 노드의 이전 노드로 업데이트.
 
     def move_left(self):
         if self.cursor.prev != self.head:  # 커서가 맨 앞이 아니면

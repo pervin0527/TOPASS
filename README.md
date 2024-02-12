@@ -34,13 +34,24 @@
 
 - [문제집 링크](https://www.acmicpc.net/workbook/view/7307)
 
-| 문제 분류  | 문제  |                        문제 제목                        |                정답 코드                 |
-| :--------: | :---: | :-----------------------------------------------------: | :--------------------------------------: |
-| 연습 문제  | 10808 |  [알파벳 개수](https://www.acmicpc.net/problem/10808)   |    [정답 코드](./0x03_Array/10808.py)    |
-| 기본 문제✔ | 2577  |   [숫자의 개수](https://www.acmicpc.net/problem/2577)   |    [정답 코드](./0x03_Array/2577.py)     |
-| 기본 문제✔ | 1475  |     [방 번호](https://www.acmicpc.net/problem/1475)     |    [정답 코드](./0x03_Array/1475.pyp)    |
-| 기본 문제✔ | 3273  |   [두 수의 합](https://www.acmicpc.net/problem/3273)    |    [정답 코드](./0x03_Array/3273.py)     |
-| 기본 문제  | 10807 |   [개수 세기](https://www.acmicpc.net/problem/10807)    | [정답 코드](../0x03/solutions/10807.cpp) |
-| 기본 문제  | 13300 |    [방 배정](https://www.acmicpc.net/problem/13300)     | [정답 코드](../0x03/solutions/13300.cpp) |
-| 기본 문제  | 11328 |     [Strfry](https://www.acmicpc.net/problem/11328)     | [정답 코드](../0x03/solutions/11328.cpp) |
-| 기본 문제  | 1919  | [애너그램 만들기](https://www.acmicpc.net/problem/1919) | [정답 코드](../0x03/solutions/1919.cpp)  |
+| 문제 분류  | 문제  |                        문제 제목                        |             정답 코드              |
+| :--------: | :---: | :-----------------------------------------------------: | :--------------------------------: |
+| 연습 문제  | 10808 |  [알파벳 개수](https://www.acmicpc.net/problem/10808)   | [정답 코드](./0x03_Array/10808.py) |
+| 기본 문제✔ | 2577  |   [숫자의 개수](https://www.acmicpc.net/problem/2577)   | [정답 코드](./0x03_Array/2577.py)  |
+| 기본 문제✔ | 1475  |     [방 번호](https://www.acmicpc.net/problem/1475)     | [정답 코드](./0x03_Array/1475.pyp) |
+| 기본 문제✔ | 3273  |   [두 수의 합](https://www.acmicpc.net/problem/3273)    | [정답 코드](./0x03_Array/3273.py)  |
+| 기본 문제  | 10807 |   [개수 세기](https://www.acmicpc.net/problem/10807)    | [정답 코드](./0x03_Array/10807.py) |
+| 기본 문제  | 13300 |    [방 배정](https://www.acmicpc.net/problem/13300)     | [정답 코드](./0x03_Array/13300.py) |
+| 기본 문제  | 11328 |     [Strfry](https://www.acmicpc.net/problem/11328)     | [정답 코드](./0x03_Array/11328.py) |
+| 기본 문제  | 1919  | [애너그램 만들기](https://www.acmicpc.net/problem/1919) | [정답 코드](./0x03_Array/1919.py)  |
+
+### 0x04 연결 리스트(Linked List)
+
+- [개념 정리](https://www.notion.so/pervin0527/Array-Linked-List-db6e4bdfc9ba42cca66b74753ecab41d?pvs=4)
+- [문제집 링크](https://www.acmicpc.net/workbook/view/7308)
+
+| 문제 분류  | 문제 |                       문제 제목                       |                정답 코드                |
+| :--------: | :--: | :---------------------------------------------------: | :-------------------------------------: |
+| 연습 문제  | 1406 |    [에디터](https://www.acmicpc.net/problem/1406)     | [정답 코드](./0x04_Linked_List/1406.py) |
+| 기본 문제✔ | 5397 |    [키로거](https://www.acmicpc.net/problem/5397)     | [정답 코드](./0x04_Linked_List/5397.py) |
+| 기본 문제✔ | 1158 | [요세푸스 문제](https://www.acmicpc.net/problem/1158) | [정답 코드](./0x04_Linked_List/1158.py) |
