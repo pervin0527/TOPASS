@@ -61,13 +61,35 @@
 - [개념 정리](https://www.notion.so/pervin0527/Stack-Queue-Deque-3443db26fa7241ddb9c7ac421b779b00)
 - [문제집 링크](https://www.acmicpc.net/workbook/view/7309)
 
-| 문제 분류  | 문제  |                                문제 제목                                |                정답 코드                 |
-| :--------: | :---: | :---------------------------------------------------------------------: | :--------------------------------------: |
-| 연습 문제  | 10828 |              [스택](https://www.acmicpc.net/problem/10828)              |    [정답 코드](./0x05_Stack/10828.py)    |
-| 기본 문제✔ | 10773 |              [제로](https://www.acmicpc.net/problem/10773)              |    [정답 코드](./0x05_Stack/10773.py)    |
-| 응용 문제✔ | 1874  |          [⭐️스택 수열](https://www.acmicpc.net/problem/1874)           |    [정답 코드](./0x05_Stack/1874.py)     |
-| 응용 문제✔ | 2493  |              [⭐️탑](https://www.acmicpc.net/problem/2493)              |    [정답 코드](./0x05_Stack/2493.py)     |
-| 응용 문제  | 6198  |        [옥상 정원 꾸미기](https://www.acmicpc.net/problem/6198)         | [정답 코드](../0x05/solutions/6198.cpp)  |
-| 응용 문제  | 17298 |             [오큰수](https://www.acmicpc.net/problem/17298)             | [정답 코드](../0x05/solutions/17298.cpp) |
-| 응용 문제  | 3015  |         [오아시스 재결합](https://www.acmicpc.net/problem/3015)         | [정답 코드](../0x05/solutions/3015.cpp)  |
-| 응용 문제  | 6549  | [히스토그램에서 가장 큰 직사각형](https://www.acmicpc.net/problem/6549) | [정답 코드](../0x05/solutions/6549.cpp)  |
+| 문제 분류  | 문제  |                                문제 제목                                |             정답 코드              |
+| :--------: | :---: | :---------------------------------------------------------------------: | :--------------------------------: |
+| 연습 문제  | 10828 |              [스택](https://www.acmicpc.net/problem/10828)              | [정답 코드](./0x05_Stack/10828.py) |
+| 기본 문제✔ | 10773 |              [제로](https://www.acmicpc.net/problem/10773)              | [정답 코드](./0x05_Stack/10773.py) |
+| 응용 문제✔ | 1874  |          [⭐️스택 수열](https://www.acmicpc.net/problem/1874)           | [정답 코드](./0x05_Stack/1874.py)  |
+| 응용 문제✔ | 2493  |              [⭐️탑](https://www.acmicpc.net/problem/2493)              | [정답 코드](./0x05_Stack/2493.py)  |
+| 응용 문제  | 6198  |       [⭐️옥상 정원 꾸미기](https://www.acmicpc.net/problem/6198)       | [정답 코드](./0x05_Stack/6198.py)  |
+| 응용 문제  | 17298 |             [오큰수](https://www.acmicpc.net/problem/17298)             |           [정답 코드]()            |
+| 응용 문제  | 3015  |         [오아시스 재결합](https://www.acmicpc.net/problem/3015)         |           [정답 코드]()            |
+| 응용 문제  | 6549  | [히스토그램에서 가장 큰 직사각형](https://www.acmicpc.net/problem/6549) |           [정답 코드]()            |
+
+### 0x06 큐(Queue)
+
+- [개념 정리](https://www.notion.so/pervin0527/Stack-Queue-Deque-3443db26fa7241ddb9c7ac421b779b00?pvs=4#39440b3288d44a8b9df634376b2bc310)
+- [문제집 링크](https://www.acmicpc.net/workbook/view/7310)
+
+| 문제 분류  | 문제  |                    문제 제목                     |             정답 코드              |
+| :--------: | :---: | :----------------------------------------------: | :--------------------------------: |
+| 연습 문제  | 10845 |   [큐](https://www.acmicpc.net/problem/10845)    | [정답 코드](./0x06_Queue/10845.py) |
+| 기본 문제✔ | 18258 | [⭐️큐 2](https://www.acmicpc.net/problem/18258) | [정답 코드](./0x06_Queue/18258.py) |
+| 기본 문제✔ | 2164  |  [카드2](https://www.acmicpc.net/problem/2164)   | [정답 코드](./0x06_Queue/2164.py)  |
+
+### 0x07 덱(Deque)
+
+- [개념 정리](https://www.notion.so/pervin0527/Stack-Queue-Deque-3443db26fa7241ddb9c7ac421b779b00?pvs=4#e956104e346e4ca4a812ca33d25e73ac)
+- [문제집 링크](https://www.acmicpc.net/workbook/view/7311)
+  | 문제 분류 | 문제 | 문제 제목 | 정답 코드 |
+  | :--: | :--: | :--: | :--: |
+  | 연습 문제 | 10866 | [덱](https://www.acmicpc.net/problem/10866) | [정답 코드](./0x07_Deque/10866.py) |
+  | 기본 문제✔ | 1021 | [⭐️회전하는 큐](https://www.acmicpc.net/problem/1021) | [정답 코드](./0x07_Deque/1021.py) |
+  | 응용 문제✔ | 5430 | [⭐️AC](https://www.acmicpc.net/problem/5430) | [정답 코드](./0x07_Deque/5430.py)|
+  | 응용 문제 | 11003 | [최솟값 찾기](https://www.acmicpc.net/problem/11003) | [정답 코드](../0x07/solutions/11003.cpp), [별해 1](../0x07/solutions/11003_1.cpp) |
