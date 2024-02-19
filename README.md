@@ -92,4 +92,16 @@
   | 연습 문제 | 10866 | [덱](https://www.acmicpc.net/problem/10866) | [정답 코드](./0x07_Deque/10866.py) |
   | 기본 문제✔ | 1021 | [⭐️회전하는 큐](https://www.acmicpc.net/problem/1021) | [정답 코드](./0x07_Deque/1021.py) |
   | 응용 문제✔ | 5430 | [⭐️AC](https://www.acmicpc.net/problem/5430) | [정답 코드](./0x07_Deque/5430.py)|
-  | 응용 문제 | 11003 | [최솟값 찾기](https://www.acmicpc.net/problem/11003) | [정답 코드](../0x07/solutions/11003.cpp), [별해 1](../0x07/solutions/11003_1.cpp) |
+  | 응용 문제 | 11003 | [최솟값 찾기](https://www.acmicpc.net/problem/11003) | [정답 코드]()|
+
+### 0x08 스택의 활용(Use of stack)
+
+- [문제집 링크](https://www.acmicpc.net/workbook/view/7312)
+
+| 문제 분류  | 문제  |                       문제 제목                       |                 정답 코드                 |
+| :--------: | :---: | :---------------------------------------------------: | :---------------------------------------: |
+| 연습 문제  | 4949  | [균형잡힌 세상](https://www.acmicpc.net/problem/4949) | [정답 코드](./0x08_Use_of_stack/4949.py)  |
+| 기본 문제✔ | 3986  |   [좋은 단어](https://www.acmicpc.net/problem/3986)   | [정답 코드](./0x08_Use_of_stack/3986.py)  |
+| 기본 문제  | 9012  |     [괄호](https://www.acmicpc.net/problem/9012)      | [정답 코드](./0x08_Use_of_stack/9012.py)  |
+| 응용 문제✔ | 10799 | [⭐️쇠막대기](https://www.acmicpc.net/problem/10799)  | [정답 코드](./0x08_Use_of_stack/10799.py) |
+| 응용 문제✔ | 2504  | [⭐️괄호의 값](https://www.acmicpc.net/problem/2504)  | [정답 코드](./0x08_Use_of_stack/2504.py)  |
