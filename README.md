@@ -106,7 +106,7 @@
 | 응용 문제✔ | 10799 | [⭐️쇠막대기](https://www.acmicpc.net/problem/10799)  | [정답 코드](./0x08_Use_of_stack/10799.py) |
 | 응용 문제✔ | 2504  | [⭐️괄호의 값](https://www.acmicpc.net/problem/2504)  | [정답 코드](./0x08_Use_of_stack/2504.py)  |
 
-### 0x09 BFS(Breadth First Search)
+### 0x09 BFS(Breadth First Search, 너비 우선 탐색)
 
 - [개념 정리](https://pervin0527.notion.site/Breadth-First-Search-BFS-987bd40284b1421ca72f734fc57f2363?pvs=4)
 - [문제집 링크](https://www.acmicpc.net/workbook/view/7313)
@@ -143,3 +143,21 @@
 | 응용 문제  | 9328  |         [열쇠](https://www.acmicpc.net/problem/9328)          |          [정답 코드]()           |
 | 응용 문제  | 3197  |      [백조의 호수](https://www.acmicpc.net/problem/3197)      |          [정답 코드]()           |
 | 응용 문제  | 20304 |    [비밀번호 제작](https://www.acmicpc.net/problem/20304)     |          [정답 코드]()           |
+
+### 0x0B Recursive(재귀 알고리즘)
+
+- [개념 정리](https://pervin0527.notion.site/Recursive-047bf9dfbb0d4f219fd85ad18ec489c5?pvs=4)
+- [문제집 링크](https://www.acmicpc.net/workbook/view/7314)
+
+| 문제 분류  | 문제  |                          문제 제목                           |               정답 코드                |
+| :--------: | :---: | :----------------------------------------------------------: | :------------------------------------: |
+| 연습 문제  | 1629  |         [곱셈](https://www.acmicpc.net/problem/1629)         | [정답 코드](./0x0B_Recursive/1629.py)  |
+| 연습 문제  | 11729 | [하노이 탑 이동 순서](https://www.acmicpc.net/problem/11729) | [정답 코드](./0x0B_Recursive/11729.py) |
+| 연습 문제  | 1074  |         [⭐️Z](https://www.acmicpc.net/problem/1074)         |             [정답 코드]()              |
+| 기본 문제✔ | 17478 | [재귀함수가 뭔가요?](https://www.acmicpc.net/problem/17478)  |             [정답 코드]()              |
+| 기본 문제✔ | 1780  |     [종이의 개수](https://www.acmicpc.net/problem/1780)      |             [정답 코드]()              |
+| 기본 문제✔ | 2630  |    [색종이 만들기](https://www.acmicpc.net/problem/2630)     |             [정답 코드]()              |
+| 기본 문제✔ | 1992  |       [쿼드트리](https://www.acmicpc.net/problem/1992)       |             [정답 코드]()              |
+| 응용 문제✔ | 2447  |     [별 찍기 - 10](https://www.acmicpc.net/problem/2447)     |       [정답 코드](), [별해 1]()        |
+| 응용 문제✔ | 2448  |     [별 찍기 - 11](https://www.acmicpc.net/problem/2448)     |             [정답 코드]()              |
+| 응용 문제  | 14956 | [Philosopher’s Walk](https://www.acmicpc.net/problem/14956)  |             [정답 코드]()              |
