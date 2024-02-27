@@ -3,12 +3,10 @@ def func(a, b, c):
         return a % c
     
     tmp = func(a, b//2, c)
-
     if b % 2 == 0:
-        return ((tmp ** (b//2)) * (tmp ** (b//2))) % c
+        return (tmp * tmp) % c
     else:
-        return (tmp * (tmp ** (b//2))) % c
-
+        return (a * tmp * tmp) % c
 
 if __name__ == "__main__":
     a, b, c = map(int, input().split())
