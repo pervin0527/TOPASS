@@ -170,7 +170,7 @@
 | :--------: | :---: | :--------------------------------------------------------: | :-------------------------------------------------------------------------------: |
 | 연습 문제  | 15649 |     [N과 M (1)](https://www.acmicpc.net/problem/15649)     |                     [정답 코드](./0x0C_BackTracking/15649.py)                     |
 | 연습 문제  | 9663  |     [⭐️N-Queen](https://www.acmicpc.net/problem/9663)     |                     [정답 코드](./0x0C_BackTracking/9663.py)                      |
-| 연습 문제  | 1182  |   [부분수열의 합](https://www.acmicpc.net/problem/1182)    |                      [정답 코드](../0x0C/solutions/1182.cpp)                      |
+| 연습 문제  | 1182  |  [⭐️부분수열의 합](https://www.acmicpc.net/problem/1182)  |                     [정답 코드](./0x0C_BackTracking/1182.py)                      |
 | 기본 문제✔ | 15650 |     [N과 M (2)](https://www.acmicpc.net/problem/15650)     | [정답 코드](../0x0C/solutions/15650.cpp), [별해 1](../0x0C/solutions/15650_1.cpp) |
 | 기본 문제✔ | 15651 |     [N과 M (3)](https://www.acmicpc.net/problem/15651)     |                     [정답 코드](../0x0C/solutions/15651.cpp)                      |
 | 기본 문제✔ | 15652 |     [N과 M (4)](https://www.acmicpc.net/problem/15652)     |                     [정답 코드](../0x0C/solutions/15652.cpp)                      |
