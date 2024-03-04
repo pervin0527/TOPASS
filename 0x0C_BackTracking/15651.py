@@ -1,0 +1,15 @@
+def func(tmp):
+    if tmp == m:
+        print(" ".join([str(x) for x in result]))
+        return
+    
+    for i in range(n):
+        result[tmp] = i + 1
+        func(tmp+1)
+
+if __name__ == "__main__":
+    n, m = map(int, input().split())
+    result = [0] * m
+    is_used = [False] * n
+
+    func(0)
