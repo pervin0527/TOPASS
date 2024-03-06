@@ -179,10 +179,10 @@
 | 기본 문제✔ | 15656 |     [N과 M (7)](https://www.acmicpc.net/problem/15656)     | [정답 코드](./0x0C_BackTracking/15656.py) |
 | 기본 문제✔ | 15657 |     [N과 M (8)](https://www.acmicpc.net/problem/15657)     | [정답 코드](./0x0C_BackTracking/15657.py) |
 | 기본 문제✔ | 15663 |     [N과 M (9)](https://www.acmicpc.net/problem/15663)     | [정답 코드](./0x0C_BackTracking/15663.py) |
-| 기본 문제✔ | 15664 |    [N과 M (10)](https://www.acmicpc.net/problem/15664)     |               [정답 코드]()               |
-| 기본 문제✔ | 15665 |    [N과 M (11)](https://www.acmicpc.net/problem/15665)     |               [정답 코드]()               |
-| 기본 문제✔ | 15666 |    [N과 M (12)](https://www.acmicpc.net/problem/15666)     |               [정답 코드]()               |
-| 기본 문제✔ | 6603  |        [로또](https://www.acmicpc.net/problem/6603)        |               [정답 코드]()               |
+| 기본 문제✔ | 15664 |    [N과 M (10)](https://www.acmicpc.net/problem/15664)     | [정답 코드](./0x0C_BackTracking/15664.py) |
+| 기본 문제✔ | 15665 |    [N과 M (11)](https://www.acmicpc.net/problem/15665)     | [정답 코드](./0x0C_BackTracking/15665.py) |
+| 기본 문제✔ | 15666 |    [N과 M (12)](https://www.acmicpc.net/problem/15666)     | [정답 코드](./0x0C_BackTracking/15666.py) |
+| 기본 문제✔ | 6603  |        [로또](https://www.acmicpc.net/problem/6603)        | [정답 코드](./0x0C_BackTracking/6603.py)  |
 | 기본 문제  | 1759  |    [암호 만들기](https://www.acmicpc.net/problem/1759)     |               [정답 코드]()               |
 | 응용 문제✔ | 1941  |   [소문난 칠공주](https://www.acmicpc.net/problem/1941)    |               [정답 코드]()               |
 | 응용 문제✔ | 16987 | [계란으로 계란치기](https://www.acmicpc.net/problem/16987) |               [정답 코드]()               |
