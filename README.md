@@ -263,13 +263,12 @@
 - [병합 정렬](https://pervin0527.notion.site/Sort-Part2-f9a7d7c216244d39b3898d449921fdc5?pvs=4)
 - [문제집 링크](https://www.acmicpc.net/workbook/view/7317)
 
-| 문제 분류 | 문제  |                        문제 제목                         |         정답 코드         |
-| :-------: | :---: | :------------------------------------------------------: | :-----------------------: |
-| 기본 문제 | 2750  |   [수 정렬하기](https://www.acmicpc.net/problem/2750)    |       [정답 코드]()       |
-| 기본 문제 | 2751  |  [수 정렬하기 2](https://www.acmicpc.net/problem/2751)   |       [정답 코드]()       |
-| 기본 문제 | 10989 |  [수 정렬하기 3](https://www.acmicpc.net/problem/10989)  |       [정답 코드]()       |
-| 기본 문제 | 11931 |  [수 정렬하기 4](https://www.acmicpc.net/problem/11931)  |       [정답 코드]()       |
-| 기본 문제 | 15688 |  [수 정렬하기 5](https://www.acmicpc.net/problem/15688)  |       [정답 코드]()       |
-| 기본 문제 | 10814 |   [나이순 정렬](https://www.acmicpc.net/problem/10814)   |       [정답 코드]()       |
-| 기본 문제 | 11650 |  [좌표 정렬하기](https://www.acmicpc.net/problem/11650)  |       [정답 코드]()       |
-| 기본 문제 | 11651 | [좌표 정렬하기 2](https://www.acmicpc.net/problem/11651) | [정답 코드](), [별해 1]() |
+| 문제 분류 | 문제  |                       문제 제목                        |             정답 코드             |
+| :-------: | :---: | :----------------------------------------------------: | :-------------------------------: |
+| 기본 문제 | 2750  |  [수 정렬하기](https://www.acmicpc.net/problem/2750)   | [정답 코드](./0x0E_Sort/2750.py)  |
+| 기본 문제 | 2751  | [수 정렬하기 2](https://www.acmicpc.net/problem/2751)  | [정답 코드](./0x0E_Sort/2751.py)  |
+| 기본 문제 | 10989 | [수 정렬하기 3](https://www.acmicpc.net/problem/10989) | [정답 코드](./0x0E_Sort/10989.py) |
+| 기본 문제 | 11931 | [수 정렬하기 4](https://www.acmicpc.net/problem/11931) | [정답 코드](./0x0E_Sort/11931.py) |
+| 기본 문제 | 15688 | [수 정렬하기 5](https://www.acmicpc.net/problem/15688) | [정답 코드](./0x0E_Sort/15688.py) |
+| 기본 문제 | 10814 |  [나이순 정렬](https://www.acmicpc.net/problem/10814)  | [정답 코드](./0x0E_Sort/10814.py) |
+| 기본 문제 | 11650 | [좌표 정렬하기](https://www.acmicpc.net/problem/11650) | [정답 코드](./0x0E_Sort/11650.py) |
