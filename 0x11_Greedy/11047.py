@@ -1,16 +1,17 @@
 import sys
+input = sys.stdin.readline
+
+def solution1():
+    n, k = map(int, input().rstrip().split())
+    arr = [int(input().rstrip()) for _ in range(n)]
+
+    cnt = 0
+    for i in range(n-1, -1, -1):
+        m = k // arr[i]
+        k -= (m * arr[i])
+        cnt += m
+
+    print(cnt)
 
 if __name__ == "__main__":
-    N, K = map(int, sys.stdin.readline().rstrip().split())
-    coins = [int(sys.stdin.readline().rstrip()) for _ in range(N)]
-
-    answer = 0
-    for idx in range(len(coins)-1, -1, -1):
-        coin = coins[idx]
-
-        if K - coin >= 0:
-            n_coin = K // coin
-            answer += n_coin
-            K -= (n_coin * coin)
-
-    print(answer)
+    solution1()
