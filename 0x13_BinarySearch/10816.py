@@ -1,39 +1,45 @@
-def binary_search(numbers, target):
-    cnt = 0
-    isin = True
-    while isin:
-        start = 0
-        end = len(numbers) - 1
-        numbers.sort()
+import sys
+input = sys.stdin.readline
 
-        is_find = False
-        while start <= end:
-            mid = (start + end) // 2
+def binary_search(arr, target):
+    st, en = 0, len(arr)-1
+    while st <= en:
+        mid = (st + en) // 2
 
-            if numbers[mid] == target:
-                cnt += 1
-                is_find = True
-                numbers[mid] = 10000001
+        if arr[mid] == target:
+            return True
+        elif arr[mid] < target:
+            st = mid + 1
+        elif arr[mid] > target:
+            en = mid - 1
 
-            elif numbers[mid] > target:
-                end = mid - 1
+    return False
+        
+def solution1():
+    N = int(input())
+    A = list(map(int, input().rstrip().split()))
+    A.sort()
 
-            else:
-                start = mid + 1
+    M = int(input())
+    B = list(map(int, input().rstrip().split()))
 
-        if not is_find:
-            isin = False
-    
-    return cnt
+    dict_a = {}
+    for a in A:
+        if a in dict_a:
+            dict_a[a] += 1
+        else:
+            dict_a[a] = 1
 
+    results = []
+    for target in B:
+        if binary_search(A, target):
+            results.append(dict_a[target])
+        else:
+            results.append(0)
 
-if __name__ == '__main__':
-    n = int(input())
-    numbers = list(map(int, input().split()))
+    results = ' '.join(map(str, results))
+    print(results)
 
-    m = int(input())
-    targets = list(map(int, input().split()))
-
-    result = [binary_search(numbers, target) for target in targets]
-    result = ' '.join([str(x) for x in result])
-    print(result)
+        
+if __name__ == "__main__":
+    solution1()
