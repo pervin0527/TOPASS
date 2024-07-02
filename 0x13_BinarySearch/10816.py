@@ -23,6 +23,13 @@ def solution1():
     M = int(input())
     B = list(map(int, input().rstrip().split()))
 
+    ## 이렇게 하면 길이가 N인 리스트를 N번 반복해서 탐색하기 때문에 비효율적. ---> O(N^2)
+    # set_a = set(A)
+    # dict_a = {}
+    # for a in set_a:
+    #     dict_a.update({a : A.count(a)})
+
+    ## 이렇게 하면 선형탐색이지만 O(N)에 동작함.
     dict_a = {}
     for a in A:
         if a in dict_a:
