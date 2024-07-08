@@ -1,27 +1,20 @@
 import sys
-input = sys.stdin.readline
 
-def solution1():
-    N, S = map(int, input().rstrip().split())
-    arr = list(map(int, input().rstrip().split()))
+k, l = map(int, sys.stdin.readline().split())
 
-    st = 0
-    en = 0
-    current_sum = 0
-    min_len = sys.maxsize
-    while en < N:
-        current_sum += arr[en]
-        en += 1
+# 수강신청이 들어온 순서대로 학번과 순서를 딕셔너리에 Key, Value로 저장
+dict = {}
+for i in range(l):
+    dict[sys.stdin.readline().rstrip()] = i
 
-        while current_sum >= S:
-            min_len = min(min_len, en - st)
-            current_sum -= arr[st]
-            st += 1
+# 순서를 기준으로 오름차순 정렬
+result = sorted(dict.items(), key = lambda x:x[1])
 
-    if min_len == sys.maxsize:
-        print(0)
-    else:
-        print(min_len)
+# 제한 인원보다 신청 인원이 적을 경우
+if (k > len(result)):
+    # 제한 인원을 신청 인원과 동일하게 수정
+    k = len(result)
 
-if __name__ == "__main__":
-    solution1()
+# 학번을 제한 인원만큼 출력
+for i in range(k):
+    print(result[i][0])
