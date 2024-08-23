@@ -1,42 +1,53 @@
 import sys
+import math
+input = sys.stdin.readline
 
-def binary_search(i_idx, j_value, sorted_arr):
-    st, en = 0, len(sorted_arr) - 1
+# def solution():
+#     n, k = map(int, input().strip().split())
 
-    while st <= en:
-        mid = (st + en) // 2
-        if sorted_arr[mid][1] == j_value:
-            if sorted_arr[mid][0] > i_idx:
-                return True
-            else:
-                return False
+#     rooms = {}
+#     for i in range(1, 7):
+#         rooms[f"{i}_0"] = []
+#         rooms[f"{i}_1"] = []
 
-        if sorted_arr[mid][1] < j_value:
-            st = mid + 1
-        elif sorted_arr[mid][1] > j_value:
-            en = mid - 1
+#     for _ in range(n):
+#         s, y = map(int, input().strip().split())
+#         rooms[f"{y}_{s}"].append(1)
 
-    return False
+#     count = 0
+#     for i in range(1, 7):
+#         if 0 < len(rooms[f"{i}_0"]) <= k:
+#             count += 1
+#         else:
+#             count += math.ceil(len(rooms[f"{i}_0"]) / k)
 
+#         if 0 < len(rooms[f"{i}_1"]) <= k:
+#             count += 1
+#         else:
+#             count += math.ceil(len(rooms[f"{i}_1"]) / k)
+
+#     print(count)
 
 def solution():
-    n = int(sys.stdin.readline().strip())
-    arr = list(map(int, sys.stdin.readline().strip().split()))
-    x = int(sys.stdin.readline().strip())
+    n, k = map(int, input().strip().split())
 
-    arr = list(enumerate(arr))
-    arr_sorted = sorted(arr, key=lambda x : x[1])
+    # 학년별, 성별로 학생 수를 카운트할 2차원 리스트 초기화
+    students = [[0] * 2 for _ in range(7)]
 
+    # 학생 정보를 입력받아 카운트
+    for _ in range(n):
+        s, y = map(int, input().strip().split())
+        students[y][s] += 1
+
+    # 필요한 방의 수 계산
     count = 0
-    for i in range(n):
-        ai = arr[i] ## (idx, value)
-
-        aj = x - ai[1]
-        if binary_search(ai[0], aj, arr_sorted):
-            count += 1
+    for i in range(1, 7):
+        for j in range(2):
+            if students[i][j] > 0:
+                count += math.ceil(students[i][j] / k)
 
     print(count)
 
-
+    
 if __name__ == "__main__":
     solution()
