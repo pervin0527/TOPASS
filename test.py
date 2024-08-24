@@ -1,53 +1,42 @@
 import sys
-import math
 input = sys.stdin.readline
+from collections import Counter
+
+def solution():
+    s1 = input().strip()
+    s2 = input().strip()
+
+    # 각 단어에서 문자 빈도수를 계산
+    counter1 = Counter(s1) ## Counter({'a': 2, 'b': 2, 'c': 2})
+    counter2 = Counter(s2) ## Counter({'x': 2, 'y': 2, 'b': 2})
+
+    # 두 Counter 객체 간의 차이 계산
+    diff1 = (counter1 - counter2) ## Counter({'a': 2, 'c': 2})
+    diff2 = (counter2 - counter1) ## Counter({'x': 2, 'y': 2})
+    diff_counter = diff1 + diff2
+
+    # 차이의 총합이 제거해야 할 문자 수
+    print(sum(diff_counter.values()))
 
 # def solution():
-#     n, k = map(int, input().strip().split())
+#     s1 = input().strip()
+#     s2 = input().strip()
 
-#     rooms = {}
-#     for i in range(1, 7):
-#         rooms[f"{i}_0"] = []
-#         rooms[f"{i}_1"] = []
+#     arr = [0] * 26
+#     for i in range(len(s1)):
+#         idx = ord(s1[i]) - 97
+#         arr[idx] += 1
 
-#     for _ in range(n):
-#         s, y = map(int, input().strip().split())
-#         rooms[f"{y}_{s}"].append(1)
+#     for i in range(len(s2)):
+#         idx = ord(s2[i]) - 97
+#         arr[idx] -= 1
 
 #     count = 0
-#     for i in range(1, 7):
-#         if 0 < len(rooms[f"{i}_0"]) <= k:
-#             count += 1
-#         else:
-#             count += math.ceil(len(rooms[f"{i}_0"]) / k)
-
-#         if 0 < len(rooms[f"{i}_1"]) <= k:
-#             count += 1
-#         else:
-#             count += math.ceil(len(rooms[f"{i}_1"]) / k)
+#     for i in arr:
+#         count += abs(i)
 
 #     print(count)
 
-def solution():
-    n, k = map(int, input().strip().split())
-
-    # 학년별, 성별로 학생 수를 카운트할 2차원 리스트 초기화
-    students = [[0] * 2 for _ in range(7)]
-
-    # 학생 정보를 입력받아 카운트
-    for _ in range(n):
-        s, y = map(int, input().strip().split())
-        students[y][s] += 1
-
-    # 필요한 방의 수 계산
-    count = 0
-    for i in range(1, 7):
-        for j in range(2):
-            if students[i][j] > 0:
-                count += math.ceil(students[i][j] / k)
-
-    print(count)
-
-    
+        
 if __name__ == "__main__":
     solution()

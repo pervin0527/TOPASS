@@ -1,28 +1,30 @@
-"""
-https://www.acmicpc.net/problem/11328
-"""
 import sys
+input = sys.stdin.readline
 
-n = int(input())
-for _ in range(n):
-    str1, str2 = sys.stdin.readline().rstrip().split()
+def str_to_list(x):
+    ## a : 97 ~ z : 122
+    arr = [0] * 26
+    for s in x :
+        idx = ord(s) - 97
+        arr[idx] += 1
 
-    str1 = sorted(str1)
-    str2 = sorted(str2)
-    print("Possible" if str1 == str2 else "Impossible")
+    return arr
 
+def solution():
+    n = int(input().strip())
+    
+    for _ in range(n):
+        s1, s2 = input().strip().split()
+        # s1 = str_to_list(s1)
+        # s2 = str_to_list(s2)
 
-
-## 왜 이렇게 어렵게 풀려고 햇을까??....
-    # checker = {x : 1 for x in str1}
-
-    # for s in str2:
-    #     if s not in checker:
-    #         checker[s] = 1
-    #     else:
-    #         checker[s] -= 1
-
-    # if all(x == 0 for x in checker.values()):
-    #     print("Possible")
-    # else:
-    #     print("Impossible")
+        s1 = sorted(s1)
+        s2 = sorted(s2)
+        
+        if s1 == s2:
+            print("Possible")
+        else:
+            print("Impossible")
+        
+if __name__ == "__main__":
+    solution()
