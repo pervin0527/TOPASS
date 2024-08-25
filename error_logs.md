@@ -7,3 +7,5 @@
 # 연결리스트
 
 - [BOJ 1406](https://www.acmicpc.net/problem/1406)
+- [BOJ 5397](https://www.acmicpc.net/problem/5397)
+- [BOJ 1158](https://www.acmicpc.net/problem/1158)
