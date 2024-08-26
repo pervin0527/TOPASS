@@ -1,13 +1,21 @@
 import sys
 
-k = int(sys.stdin.readline().rstrip())
+def solution():
+    k = int(sys.stdin.readline().rstrip())
 
-stack = []
-for _ in range(k):
-    n = int(sys.stdin.readline().rstrip())
-    if n != 0:
-        stack.append(n)
-    else:
-        stack.pop()
+    values = []
+    for _ in range(k):
+        values.append(int(sys.stdin.readline().rstrip()))
+    
+    stack = []
+    for value in values:
+        if value == 0:
+            stack.pop()
+        else:
+            stack.append(value)
 
-print(sum(stack))
+    print(sum(stack))
+        
+
+if __name__ == "__main__":
+    solution()

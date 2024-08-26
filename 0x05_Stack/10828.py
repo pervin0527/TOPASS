@@ -1,37 +1,43 @@
 import sys
 
-n = int(sys.stdin.readline().rstrip())
+def solution():
+    N = int(sys.stdin.readline().strip())
 
-commands = []
-for _ in range(n):
-    commands.append(sys.stdin.readline().rstrip().split())
+    commands = []
+    for _ in range(N):
+        command = sys.stdin.readline().strip()
 
-result = []
-stack = []
-for command in commands:
-    if command[0] == "push":
-        stack.append(command[1])
-
-    elif command[0] == "pop":
-        if len(stack):
-            result.append(stack.pop())
+        if " " in command:
+            commands.append(command.split())
         else:
-            result.append(-1)
+            commands.append(command)
 
-    elif command[0] == "size":
-        result.append(len(stack))
-
-    elif command[0] == "empty":
-        if len(stack):
-            result.append(0)
+    stack = []
+    for command in commands:
+        if isinstance(command, list) and command[0] == "push":
+            stack.append(command[1])
+        
+        elif command == "pop":
+            if stack:
+                print(stack.pop())
+            else:
+                print(-1)
+        
+        elif command == "size":
+            print(len(stack))
+        
+        elif command == "empty":
+            if stack:
+                print(0)
+            else:
+                print(1)
+        
         else:
-            result.append(1)
+            if stack:
+                print(stack[-1])
+            else:
+                print(-1)
+        
 
-    else:
-        if len(stack):
-            result.append(stack[-1])
-        else:
-            result.append(-1)
-
-for res in result:
-    print(res)
+if __name__ == "__main__":
+    solution()
