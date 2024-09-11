@@ -1,13 +1,23 @@
-n = int(input())
-buildings = [int(input()) for _ in range(n)]
+import sys
 
-result = 0
-stack = []
-for building in buildings:
-    while stack and building >= stack[-1]:
-        stack.pop()
-    stack.append(building)
+def solution():
+    N = int(sys.stdin.readline().rstrip())
+    builds = [int(sys.stdin.readline().rstrip()) for _ in range(N)]
 
-    result += len(stack) - 1
+    print()
+    count = 0
+    stack = []
+    for i in range(N-1, -1, -1):
+        build = builds[i]
 
-print(result)
+        while stack and build > stack[-1]:
+            stack.pop()
+
+        print(len(stack))
+        count += len(stack)
+        stack.append(build)
+
+    print(count)
+
+if __name__ == "__main__":
+    solution()

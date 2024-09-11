@@ -1,30 +1,23 @@
 import sys
 
 def solution():
-    n = int(sys.stdin.readline().rstrip())
-    arr = [int(sys.stdin.readline().rstrip()) for _ in range(n)]
+    N = int(sys.stdin.readline().rstrip())
+    builds = [int(sys.stdin.readline().rstrip()) for _ in range(N)]
 
-    i = 1
+    print()
+    count = 0
     stack = []
-    result = []
-    state = True
-    for a in arr:
-        while i <= a:
-            stack.append(i)
-            result.append("+")
-            i += 1
+    for i in range(N-1, -1, -1):
+        build = builds[i]
 
-        if stack[-1] == a:
+        while stack and build > stack[-1]:
             stack.pop()
-            result.append("-")
-        else:
-            state = False
-            print("NO")
-            break
 
-    if state:
-        for r in result:
-            print(r)
+        print(len(stack))
+        count += len(stack)
+        stack.append(build)
+
+    print(count)
 
 if __name__ == "__main__":
     solution()
