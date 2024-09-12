@@ -1,23 +1,15 @@
 import sys
+from collections import deque
 
 def solution():
     N = int(sys.stdin.readline().rstrip())
-    builds = [int(sys.stdin.readline().rstrip()) for _ in range(N)]
+    cards = deque([x for x in range(1, N+1)])
 
-    print()
-    count = 0
-    stack = []
-    for i in range(N-1, -1, -1):
-        build = builds[i]
+    while len(cards) > 1:
+        _ = cards.popleft() ## 맨 위에 있는 카드 버리기.
+        cards.append(cards.popleft()) ## 그 다음 맨 위에 있던 카드를 맨 밑으로 보낸다.
 
-        while stack and build > stack[-1]:
-            stack.pop()
-
-        print(len(stack))
-        count += len(stack)
-        stack.append(build)
-
-    print(count)
-
+    print(cards[0])
+        
 if __name__ == "__main__":
     solution()

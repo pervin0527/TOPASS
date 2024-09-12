@@ -1,17 +1,15 @@
-"""
-우선, 제일 위에 있는 카드를 바닥에 버린다. 그 다음, 제일 위에 있는 카드를 제일 아래에 있는 카드 밑으로 옮긴다.
-"""
-
+import sys
 from collections import deque
 
-n = int(input())
-q = deque([x for x in range(1, n+1)])
+def solution():
+    N = int(sys.stdin.readline().rstrip())
+    cards = deque([x for x in range(1, N+1)])
 
-while q:
-    if len(q) == 1:
-        break
+    while len(cards) > 1:
+        _ = cards.popleft() ## 맨 위에 있는 카드 버리기.
+        cards.append(cards.popleft()) ## 그 다음 맨 위에 있던 카드를 맨 밑으로 보낸다.
 
-    first = q.popleft()
-    q.append(q.popleft())
-
-print(q[0])
+    print(cards[0])
+        
+if __name__ == "__main__":
+    solution()
