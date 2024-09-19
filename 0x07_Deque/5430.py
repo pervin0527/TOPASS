@@ -1,32 +1,43 @@
+import sys
+input = sys.stdin.readline
 from collections import deque
 
-T = int(input())
-for _ in range(T):
-    funcs = [x for x in input()]
-    n = int(input())
+def solution():
+    T = int(input().rstrip())
+    for t in range(T):
+        P = input().rstrip()
+        N = int(input().rstrip())
+        arr = input().rstrip()
 
-    if n > 0:
-        arr = deque([int(x) for x in input()[1:-1].split(',')])
-    else:
-        _ = input()
-        arr = deque()
-    
-    reverse = False
-    for f in funcs:
-        if f == "R":
-            reverse = not reverse
+        if N == 0:
+            arr = deque()  # N이 0일 경우 빈 deque
         else:
-            if len(arr) == 0:
-                print("error")
-                break
+            arr = deque(arr[1:-1].split(','))  # 배열을 deque로 변환
+
+        reversed_flag = False  # 뒤집어야 하는지 여부를 추적하는 플래그
+        is_error = False
+
+        for p in P:
+            if p == "R":
+                reversed_flag = not reversed_flag  # 뒤집을지 여부만 반전
             else:
-                if reverse:
-                    arr.pop()
+                if arr:
+                    if reversed_flag:
+                        arr.pop()  # 뒤집힌 상태이면 뒤에서 제거
+                    else:
+                        arr.popleft()  # 정상 상태이면 앞에서 제거
                 else:
-                    arr.popleft()
-    else:
-        arr = list(arr)
-        if reverse:
-            arr = arr[::-1]
-        result = ",".join(str(item) for item in arr)
-        print("[" + result + "]")
+                    is_error = True
+                    break
+
+        if is_error:
+            print("error")
+        else:
+            if reversed_flag:
+                arr.reverse()  # 마지막에 한 번만 뒤집기
+
+            arr = f"[{','.join(arr)}]"
+            print(arr)
+
+if __name__ == "__main__":
+    solution()

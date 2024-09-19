@@ -1,15 +1,38 @@
 import sys
+input = sys.stdin.readline
+
 from collections import deque
 
 def solution():
-    N = int(sys.stdin.readline().rstrip())
-    cards = deque([x for x in range(1, N+1)])
+    T = int(input().rstrip())
+    for t in range(T):
+        P = input().rstrip()
+        N = int(input().rstrip())
+        arr = input().rstrip()
 
-    while len(cards) > 1:
-        _ = cards.popleft() ## 맨 위에 있는 카드 버리기.
-        cards.append(cards.popleft()) ## 그 다음 맨 위에 있던 카드를 맨 밑으로 보낸다.
+        arr = arr[1:-1].split(',')
+        arr = deque(arr)
 
-    print(cards[0])
-        
+        if N == 0 and 'D' in P:
+            print('error')
+            continue
+
+        is_error = False
+        for p in P:
+            if p == "R":
+                arr.reverse()
+
+            else:
+                if len(arr) > 0:
+                    arr.popleft()
+                else:
+                    is_error = True
+
+        if is_error:
+            print("error")
+        else:
+            arr = f"[{','.join(arr)}]"
+            print(arr)
+
 if __name__ == "__main__":
     solution()

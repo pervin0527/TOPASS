@@ -1,24 +1,28 @@
 import sys
 from collections import deque
 
-n, m = map(int, sys.stdin.readline().rstrip().split())
-dq = deque([num for num in range(1, n+1)])
-targets = list(map(int, sys.stdin.readline().rstrip().split()))
+def solution():
+    N, M = map(int, input().split())
+    targets = list(map(int, input().split()))
 
-count = 0
-for target in targets:
-    while True:
-        if target == dq[0]:
-            dq.popleft()
-            break
+    dq = deque(range(1, N+1))
+
+    cnt = 0
+    for target in targets:
+        idx = dq.index(target)
+        if idx <= len(dq) // 2:
+            # 왼쪽으로 회전
+            for _ in range(idx):
+                dq.append(dq.popleft())
+                cnt += 1
         else:
-            if dq.index(target) < len(dq) / 2:
-                while dq[0] != target:
-                    dq.append(dq.popleft())
-                    count += 1
-            else:
-                while dq[0] != target:
-                    dq.appendleft(dq.pop())
-                    count += 1
+            # 오른쪽으로 회전
+            for _ in range(len(dq) - idx):
+                dq.appendleft(dq.pop())
+                cnt += 1
+        dq.popleft()  # 첫 번째 원소 제거
 
-print(count)
+    print(cnt)
+            
+if __name__ == "__main__":
+    solution()
