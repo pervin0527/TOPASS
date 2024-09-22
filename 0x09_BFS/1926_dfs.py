@@ -3,6 +3,9 @@ from typing import List
 input = sys.stdin.readline
 
 def dfs(graph, cx, cy, vis):
+    ## point1 : area는 dfs 함수 내에 정의된 변수. 즉, local variable이기 때문에 재귀 호출로 반복되더라도 덮어써지지 않는다.
+    ## point2 : 일반적인 재귀함수는 종료조건이 명시되어야 하지만 dfs는 stack에 좌표가 추가되지 않으면 동작하지 않기 때문에 종료조건을 별도로 명시하지 않아도 된다.
+    ## 쉽게 말해 조건을 만족시키지 못하면 재귀 호출 자체가 수행되지 못함.
     area = 1
     vis[cx][cy] = True
 

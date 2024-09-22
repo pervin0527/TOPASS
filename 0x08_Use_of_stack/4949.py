@@ -1,29 +1,51 @@
 import sys
+input = sys.stdin.readline
 
-while True:
-    stack = []
-    sentence = sys.stdin.readline().rstrip()
+from collections import deque
 
-    if sentence == ".":
-        break
+def solution():
+    lines = []
+    while True:
+        line = input().rstrip()
+        lines.append(line)
 
-    for s in sentence:
-        if s == "(" or s == "[":
-            stack.append(s)
-        elif s == ")":
-            if stack and stack[-1] == "(":
-                stack.pop()
-            else:
-                stack.append(s)
-        elif s == "]":
-            if stack and stack[-1] == "[":
-                stack.pop()
-            else:
-                stack.append(s)
-        else:
+        if line == '.':
+            break
+
+    for line in lines:
+        if line == '.':
+            break
+
+        stack = []
+        pair_ok = True
+        for c in line:
+            if c == '(' or c == '[':
+                stack.append(c)
+            
+            elif c == ')':
+                if stack and stack[-1] == '(':
+                    stack.pop()
+                else:
+                    print('no')
+                    pair_ok = False
+                    break
+
+            elif c == ']':
+                if stack and stack[-1] == '[':
+                    stack.pop()
+                else:
+                    print('no')
+                    pair_ok = False
+                    break
+
+        if not pair_ok:
             continue
 
-    if not stack:
-        print("yes")
-    else:
-        print("no")
+        if not stack:
+            print('yes')
+        else:
+            print('no')
+                
+
+if __name__ == "__main__":
+    solution()
