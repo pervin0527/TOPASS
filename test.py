@@ -1,49 +1,49 @@
 import sys
 from typing import List
+from collections import deque
+
 input = sys.stdin.readline
 
-def dfs(graph, cx, cy, vis):
-    area = 1
-    vis[cx][cy] = True
+def bfs(grh, dist):
+    q = deque()
+    q.append((0, 0))
+    dist[0][0] = 1
 
-    coord_x = [0, 0, -1, 1]
-    coord_y = [-1, 1, 0, 0]
-    for i in range(len(coord_x)):
-        tx = cx + coord_x[i]
-        ty = cy + coord_y[i]
+    x_coord = [-1, 1, 0, 0]
+    y_coord = [0, 0, -1, 1]
+    while q:
+        cx, cy = q.popleft()
+        cd = dist[cx][cy]
 
-        if tx < 0 or tx >= len(graph) or ty < 0 or ty >= len(graph[0]):
-            continue
+        for i in range(len(x_coord)):
+            dx = cx + x_coord[i]
+            dy = cy + y_coord[i]
 
-        if vis[tx][ty] or graph[tx][ty] == 0:
-            continue
+            if dx < 0 or dx >= len(grh) or dy < 0 or dy >= len(grh[0]):
+                continue
 
-        area += dfs(graph, tx, ty, vis)
+            if grh[dx][dy] != 1 or dist[dx][dy] != 0:
+                continue
 
-    return area
+            q.append((dx, dy))
+            dist[dx][dy] = cd + 1
+
+    return dist
 
 def solution():
-    n, m = map(int, input().rstrip().split())
-
-    paper = []
-    for _ in range(n):
-        line = list(map(int, input().rstrip().split()))
-        paper.append(line)
-
-    visited = [[False] * m for _ in range(n)]
-
-    areas = []
-    num_pics = 0
-    for i in range(n):
-        for j in range(m):
-            if paper[i][j] == 1 and not visited[i][j]:
-                num_pics += 1
-                area = dfs(paper, i, j, visited)
-                areas.append(area)
-
-    print(num_pics)
-    print(max(areas))
-
+    N, M = map(int, input().rstrip().split())
     
+    graph = []
+    distance = []
+    for _ in range(N):
+        line = input().rstrip()
+        line = [int(x) for x in line]
+        graph.append(line)
+
+        distance.append([0 for _ in range(M)])
+
+    distance = bfs(graph, distance)
+    print(distance[N-1][M-1])
+
 if __name__ == "__main__":
     solution()

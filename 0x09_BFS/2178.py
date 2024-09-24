@@ -1,34 +1,49 @@
 import sys
+from typing import List
 from collections import deque
 
-n, m = map(int, sys.stdin.readline().rstrip().split())
+input = sys.stdin.readline
 
-graph = []
-check = []
-for _ in range(n):
-    line = [int(x) for x in sys.stdin.readline().rstrip()]
-    graph.append(line)
-    check.append([-1] * len(line))
+def bfs(grh, dist):
+    q = deque()
+    q.append((0, 0))
+    dist[0][0] = 1
 
-q = deque()
-q.append((0, 0))
-check[0][0] = 1
+    x_coord = [-1, 1, 0, 0]
+    y_coord = [0, 0, -1, 1]
+    while q:
+        cx, cy = q.popleft()
+        cd = dist[cx][cy]
 
-dx = [-1, 1, 0, 0]
-dy = [0, 0, -1, 1]
-while q:
-    tx, ty = q.popleft()
-    td = check[tx][ty]
+        for i in range(len(x_coord)):
+            dx = cx + x_coord[i]
+            dy = cy + y_coord[i]
 
-    for idx in range(4):
-        cx, cy = tx + dx[idx], ty + dy[idx]
+            if dx < 0 or dx >= len(grh) or dy < 0 or dy >= len(grh[0]):
+                continue
 
-        if cx < 0 or cx >= n or cy < 0 or cy >= m:
-            continue
-        if graph[cx][cy] == 0 or check[cx][cy] > -1:
-            continue
+            if grh[dx][dy] != 1 or dist[dx][dy] != 0:
+                continue
 
-        q.append((cx, cy))
-        check[cx][cy] = td + 1
+            q.append((dx, dy))
+            dist[dx][dy] = cd + 1
 
-print(check[-1][-1])
+    return dist
+
+def solution():
+    N, M = map(int, input().rstrip().split())
+    
+    graph = []
+    distance = []
+    for _ in range(N):
+        line = input().rstrip()
+        line = [int(x) for x in line]
+        graph.append(line)
+
+        distance.append([0 for _ in range(M)])
+
+    distance = bfs(graph, distance)
+    print(distance[N-1][M-1])
+
+if __name__ == "__main__":
+    solution()
