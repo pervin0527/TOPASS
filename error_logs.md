@@ -26,3 +26,8 @@ None
 
 - [❌ BOJ-1021](https://www.acmicpc.net/problem/1021) 접근은 좋았으나 코드를 잘못 작성.
 - [❌ BOJ-5430](https://www.acmicpc.net/problem/5430) 덱 반전 및 버리기에 대한 아이디어를 생각하지 못함.
+
+## BFS
+
+- [✅ BOJ-7576](https://www.acmicpc.net/problem/7576) 참고 없이 해결했으나 까다로웠음.
+- [❌ BOJ-4179](https://www.acmicpc.net/problem/4179) 어려워서 해결 못함. 풀이 참고했음.
