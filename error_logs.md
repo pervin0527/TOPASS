@@ -31,3 +31,7 @@ None
 
 - [✅ BOJ-7576](https://www.acmicpc.net/problem/7576) 참고 없이 해결했으나 까다로웠음.
 - [❌ BOJ-4179](https://www.acmicpc.net/problem/4179) 어려워서 해결 못함. 풀이 참고했음.
+
+## Recursive
+
+- [❌ BOJ-1629](https://www.acmicpc.net/problem/1629) 모듈러 연산 및 분할 정복
