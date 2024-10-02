@@ -35,3 +35,6 @@ None
 ## Recursive
 
 - [❌ BOJ-1629](https://www.acmicpc.net/problem/1629) 모듈러 연산 및 분할 정복
+- [❌ BOJ-11729](https://www.acmicpc.net/problem/11729) 그냥 모르겠음
+- [❌ BOJ-1074](https://www.acmicpc.net/problem/1074) 그냥 모르겠음
+- [✅ BOJ-17478](https://www.acmicpc.net/problem/17478) 참고 없이 해결했음.(출력해야하는 글자를 완벽히 똑같이 써야함에 주의...)
