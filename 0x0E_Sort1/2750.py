@@ -39,3 +39,15 @@ if __name__ == "__main__":
     result = merge_sort(numbers)
     for num in result:
         print(num)
+
+
+# def main():
+#     N = int(input().rstrip())
+#     arr = [int(input().rstrip()) for _ in range(N)]
+
+#     arr.sort()
+#     result = "\n".join([str(x) for x in arr])
+#     print(result)
+
+# if __name__ == "__main__":
+#     main()

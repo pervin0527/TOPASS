@@ -38,3 +38,12 @@ None
 - [❌ BOJ-11729](https://www.acmicpc.net/problem/11729) 그냥 모르겠음
 - [❌ BOJ-1074](https://www.acmicpc.net/problem/1074) 그냥 모르겠음
 - [✅ BOJ-17478](https://www.acmicpc.net/problem/17478) 참고 없이 해결했음.(출력해야하는 글자를 완벽히 똑같이 써야함에 주의...)
+
+## BackTracking
+
+- [✅ BOJ-15649](https://www.acmicpc.net/problem/15649) 참고 없이 해결했음.
+
+## Sorting
+
+- [❌ BOJ-2751](https://www.acmicpc.net/problem/2751)
+- [❌ BOJ-10989](https://www.acmicpc.net/problem/10989)
