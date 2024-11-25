@@ -9,3 +9,7 @@
 ## 03-Stack
 
 - [https://www.acmicpc.net/problem/1874](https://www.acmicpc.net/problem/1874)
+
+## 05-Deque
+
+- [https://www.acmicpc.net/problem/1021](https://www.acmicpc.net/problem/1021)
