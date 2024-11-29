@@ -13,3 +13,7 @@
 ## 05-Deque
 
 - [https://www.acmicpc.net/problem/1021](https://www.acmicpc.net/problem/1021)
+
+## 07-Recursive
+
+- [https://www.acmicpc.net/problem/1629](https://www.acmicpc.net/problem/1629)
