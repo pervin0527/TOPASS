@@ -6,6 +6,10 @@
 
 - [https://www.acmicpc.net/problem/1475](https://www.acmicpc.net/problem/1475)
 
+## 02-LinkedList
+
+- [https://www.acmicpc.net/problem/1406](https://www.acmicpc.net/problem/1406)
+
 ## 03-Stack
 
 - [https://www.acmicpc.net/problem/1874](https://www.acmicpc.net/problem/1874)
