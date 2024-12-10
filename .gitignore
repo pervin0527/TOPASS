@@ -3,4 +3,5 @@ __pycache__/
 solve.py
 .vscode/
 builds/
+build/
 test
